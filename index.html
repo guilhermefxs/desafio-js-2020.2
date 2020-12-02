@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+    <div class="player" id="player-1">
+        <audio src="./musics/Conqueror.mp3">
+        </audio>
+        <h1>AURORA - Conqueror</h1>
+        <div class="controls">
+            <button class="action play">[ Play ]</button>
+            <button class="action pause">[ Pause ]</button>
+            <button class="action forward">[ +10 ]</button>
+            <button class="action backward">[ -10 ]</button>
+        </div>
+        <div class="total-bars">
+            <input type="range" class="progress-bar" value="0">
+        </div>
+    </div>
+    <div class="player" id="player-2">
+        <audio src="./musics/Queendom.mp3">
+        </audio>
+
+        <h1>AURORA - Queendom</h1>
+        <div class="controls">
+            <button class="action play">[ Play ]</button>
+            <button class="action pause">[ Pause ]</button>
+            <button class="action forward">[ +10 ]</button>
+            <button class="action backward">[ -10 ]</button>
+        </div>
+        <div class="total-bars">
+            <input type="range" class="progress-bar" value="0">
+        </div>
+    </div>
+    <script src="./js/player-oop.js"></script>
+    <script>
+        const p1 = new Player({ playerId: 'player-1' })
+        const p2 = new Player({ playerId: 'player-2' })
+    </script>
+</body>
+</html>
